@@ -1,0 +1,207 @@
+html{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    background: black !important;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:  #0be028;
+}
+
+h2{
+    text-align: center;
+    color: #48eb28;
+    font-style: italic;
+
+}
+h3{
+    text-align: center;
+    color: #0be028;
+    font-size: 1.5em;
+    margin-top: 5vh;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Navbar */
+ /*header name -Business name */
+ .name{
+  margin-top: -2vh;
+  font-size: 1.7em;
+ 
+}
+
+
+ /*media icons */
+.icon{
+    display: inline-block;
+    font-size: 1.3em;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+/* Index */
+.card{
+  color: pink;
+  background-color: black;
+  border: none;
+}
+
+.CardPara{
+  font-size: 0.8em;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color:#0be028;
+}
+
+.Desktop{
+    display: none;
+
+}
+.Tablet, .TabletPro, .Laptop{
+  display: none;
+}
+
+
+/* black separate div: can a different colour */
+.block{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background: black;
+    color: white;
+    margin-bottom: 5vh;
+}
+/* paragraph text for all the pages and sections */
+p{
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 18px;
+    text-align: justify;
+    text-size-adjust: 2px;
+    margin: 20px;
+}
+
+/* footer section */
+ /* footer text */
+.CopyText{
+    text-align: center;
+    font-size: 14px;
+}
+.WebsiteDeveloperName{
+    color:#0be028;
+}
+
+/* Brands page */
+.Logo{
+    width: 200px;
+    border: 2px solid white;
+}
+
+
+   /* --------------------------------------------------------------media queries */
+ 
+ /* // Extra small devices (portrait phones, less than 576px) */
+ /* // No media query for `xs` since this is the default in Bootstrap */
+ 
+ /* // -Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (orientation: landscape) { 
+ 
+   
+ }
+ 
+ /* -Medium devices (tablets or ipad) */
+ @media (min-width: 768px) {
+
+
+  /*header name  */
+  .name{
+    margin-top: -2vh;
+  }
+  
+ /* Brand logos */
+  .Logo{
+    margin-bottom: 2vh;
+  }
+
+  .Tablet{
+    display: block;
+  }
+  .TabletPro, .Laptop{
+    display: none;
+  }
+
+}
+ 
+ /* -Large devices (ipad pro) */
+ @media (min-width: 992px) { 
+
+  .mobile-only{
+      display: none;
+  }
+  .Desktop{
+  display: block;
+  color: white;
+  }  
+  .TabletPro{
+    display: block;
+  }
+
+  .Laptop{
+    display: none;
+  }
+h2{
+  margin-left: 8vw;
+}
+
+  .Logo{
+    width: 210px;
+    margin-top: 9vh;
+    margin-left: -5vw;
+  } 
+ }
+ @media screen and (min-width: 1200px) {
+     
+  /* grey div */
+  /* .block{
+    width: 86vw;
+  } */
+
+  .Laptop{
+    display: block;
+  }
+
+  .icon{
+  font-size: 1.1em;
+  height: 35px;
+  width: 35px;
+  }
+  /* Brands*/
+  .Logo{
+    width: 200px;
+    margin-top: 15vh;
+  }  
+ 
+   }
+  
+   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
